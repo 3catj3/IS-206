@@ -2,7 +2,7 @@
 from sys import exit
 
 import rom1
-import rom2
+
 
 def dead (grunn):
 		print "Du skriver feil, du kan kun velge mellom kake eller kaffe eller rom1! (skriv inn kake,kaffe eller rom1)"
@@ -17,19 +17,18 @@ def rom2():
                  
 				 """
         
-	next = raw_input("> ")
-        
+	next = raw_input("> ") 	#presenterer spørsmål til spilleren, får input fra spilleren og returnerer datainput.
         
         
         if next == "kake":
-			          print "Takk for at du spilte, her har du kaka" 
+			          print "Takk for at du spilte, her har du kaka" #hvis input= kake, printes: takk for at du spilte, her har du kaka..
         elif next == "kaffe":
 					print "Takk for at du spilte, her har du en kopp kaffe"	
 			
-        elif next == "rom1":
+        elif next == "rom1": #hvis input er rom1 vil rom1 filen og funksjon rom1 kalles.
                    rom1.rom1()	          
         else:
-              dead  ("Du skriver feil, du kan kun velge mellom kake eller kaffe eller rom1! (skriv inn kake,kaffe eller rom1)")
-			  
+              dead  ("Du skriver feil, du kan kun velge mellom kake eller kaffe eller rom1! (skriv inn kake,kaffe eller rom1)") 
+			  #hvis input er annet enn kake,kaffe,rom1 blir denne mld printet.
               
 
