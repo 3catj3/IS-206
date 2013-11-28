@@ -1,3 +1,4 @@
+
 #Import statement
 from random import randint
 
@@ -22,20 +23,20 @@ start = Room("start",
 """
 Velkommen til eventyrland. Bli med paa et kjempe morsomt spill! 
                 
-			Trykk CTRL-C hvis du IKKE har lyst til aa bli med!
+Lukk browseren hvis du IKKE har lyst til aa bli med!
 				
-			Trykk fortsett for aa bli med! Kom igjen, ikke vaer kjip naa!
+Trykk fortsett for aa bli med! Kom igjen, ikke vaer kjip naa!
 				
-			Hva velger du?
+Hva velger du?
                  """              
-                        )
+)
 
 
 rom3 = Room("rom3",
 """
 Du kan velge brus eller is!
-	Liker du ikke brus eller is, gaa til rom2 og velg mellom andre premier!
-        Hva velger du?
+Liker du ikke brus eller is, gaa til rom2 og velg mellom andre premier!
+Hva velger du?
                  
 """
 )
@@ -44,23 +45,26 @@ Du kan velge brus eller is!
 magisk_slott = Room("magisk_slott",
 """
 Du er inne i det magiske slottet. 
-		Du maa beseire den onde Styggen, klarer du det faar du premie.
-        skriv inn rom3, og det magiske spillet vil starte..
+Du maa beseire den onde Styggen, klarer du det faar du premie.
+skriv inn rom2 eller rom3 og du kan vinne en fantastisk premie...
 """)
 
 
 rom2 = Room("rom2",
 """
 Velkommen til rom2.
-				Her kan du velge kake eller kaffe!
-				Liker du ikke kake eler kaffe, gaa til rom1 da!
-				Hva velger du?
+Her kan du velge kake eller kaffe!
+Liker du ikke kake eler kaffe, gaa til rom3 da!
+Hva velger du?
+
+  
 """)
 
 
 kake = Room("kake",
 """Takk for at du spilte, her har du kaka
-""")
+"""
+)
 
 
 kaffe = Room("kaffe",
@@ -79,15 +83,10 @@ brus = Room("brus",
 generic_death = Room("death", "You died")
 
 
-escape_pod.add_paths({
-    '2': the_end_winner,
-    '*': the_end_loser
-    })
-
-
 rom3.add_paths({
     'is': isrom,
-    'brus': brus
+    'brus': brus,
+    'rom2': rom2
 })
 
 
@@ -99,11 +98,12 @@ magisk_slott.add_paths({
 
 start.add_paths({
     'fortsett': magisk_slott,
-    
+    	
 })
 rom2.add_paths({
     'kake': kake,
-    'kaffe':kaffe
+    'kaffe':kaffe,
+    'rom3': rom3
 })
 
 START = start
