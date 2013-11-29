@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-## STEINSAKSPAPIR
+# STEIN SAKS OG PAPIR.
 
  
 import random
