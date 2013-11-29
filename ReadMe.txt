@@ -12,7 +12,7 @@ hvis jeg f.eks har skrevet kommentar til "raw_input" i en fil har jeg valgt å i
 
 Jeg startet med å ha norske ord i koden, men etter tips fra foreleser har jeg etter assignment 2 skrevet all koden på engelsk. (rot 13)
 
-Jeg har gjort lesson1, lesson2, og lesson 3 på udacity, men ikke fått laget bloggen da jeg har stått stille i lengre perioder
+Jeg har gjort lesson1, lesson2, og lesson 3 på udacity i assignment 3, men ikke fått laget bloggen da jeg har stått stille i lengre perioder
 på enkelte oppgaver i assignment 2, da spesielt oppg 46, der man skulle installere pip, distribute, nose og virtualenv, noe som
 ikke lett lot seg gjøre. har brukt mye tid på å prøve ut forskjellige måter, forskjellige pakker og lest og søkt hjelp på forum og diverse 
 internett sider. 
